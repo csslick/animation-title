@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>animation-title</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+    body{overflow: hidden;}
+
+    header {
+      position: relative;
+      width: 100%;
+      height: 700px;
+      background: #ccc;
+      background-image: url('https://images.pexels.com/photos/2289407/pexels-photo-2289407.jpeg?auto=compress&cs=tinysrgb&h=650&w=940');
+      background-size: cover;
+
+      animation-name: bg-slide-down;
+      animation-duration: 1s;
+      animation-delay: 0.5s;
+      animation-timing-function: ease-out;
+      /* 애니메이션 종료 위치 */
+      animation-fill-mode: forwards;
+      opacity: 0;
+    }
+
+    @keyframes bg-slide-down {
+      from {
+        transform: translateY(-100px);
+        opacity: 0;
+      }
+
+      to {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+
+    .fade-slide-down{
+      animation-name: fade-slide-down;
+      animation-duration: 0.5s;
+      animation-fill-mode: forwards;
+      opacity: 0;
+    }
+    .ani-delay1{ animation-delay: 1s;}
+    .ani-delay1-5{ animation-delay: 1.5s;}
+    .ani-delay2{ animation-delay: 2s;}
+    @keyframes fade-slide-down{
+      0%{
+        opacity:0;
+        transform: translateY(-50px)
+      }
+      100%{
+        opacity:1;
+        transform: translateY(0px)
+      }
+    }
+
+
+    header img {
+      margin-bottom: 1em;
+    }
+
+    header h1 {
+      font-size: 40px;
+      margin-bottom: 0.6em;
+    }
+
+    header h3 {
+      font-size: 20px;
+      margin-bottom: 1em;
+    }
+
+    .btn-wrap {
+      margin-top: 2em;
+    }
+
+    .btn-wrap button {
+      background: #269300;
+      border: none;
+      padding: 20px;
+      color: #fff;
+      font-size: 18px;
+    }
+
+    .btn-wrap button:hover {
+      text-decoration: underline;
+    }
+
+    .layer-dark {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background:
+        linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.1));
+    }
+
+    section {
+      position: absolute;
+      max-width: 1200px;
+      min-width: 375px;
+      text-align: center;
+      /* border: 1px solid red; */
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      color: #fff;
+    }
+
+    .layer-skew {
+      position: absolute;
+      left: 0;
+      bottom: -140px;
+      background: #fff;
+      width: 100%;
+      height: 200px;
+      opacity: 1;
+      transform: skewY(-5deg);
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="layer-dark"></div>
+    <div class="layer-skew"></div>
+    <section>
+      <img class="fade-slide-down ani-delay1" width="160" src="images/h_logo.svg" alt="logo">
+      <h1 class="fade-slide-down ani-delay1-5">HKD's Homepage</h1>
+      <h3 class="fade-slide-down ani-delay2">Welcome to my awesome Home</h3>
+      <div class="btn-wrap fade-slide-down ani-delay2">
+        <button>Read more</button>
+      </div>
+    </section>
+  </header>
+</body>
+
+</html>
