@@ -2,8 +2,8 @@
 # CSS animation Library - csslick_ani.css
 
 ## How to Use
-효과명 클래스: fade-slide-down
-지연시간 클래스
+### 효과명 클래스: fade-slide-down
+### 지연시간 클래스
   - 기본 딜레이값 (0.5초)
   - ani-delay_1_5(1초 딜레이)
   - ani-delay_1_5(1.5초 딜레이)
