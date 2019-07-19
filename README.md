@@ -10,8 +10,7 @@
   - ani-delay_2(2초 딜레이)
 
 ### 사용예시
-<!--
-<h1 class="fade-slide-down ani-delay_1_5">HKD's Homepage</h1>
+   <h1 class="fade-slide-down ani-delay_1_5">HKD's Homepage</h1>
 <h3 class="fade-slide-down ani-delay_2">Welcome to my awesome Home</h3>
 <div class="btn-wrap fade-slide-down ani-delay_2">
--->
+   
