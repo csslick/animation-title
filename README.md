@@ -1,5 +1,5 @@
 # animation-title
-# CSS animation Library 
+# CSS animation Library - csslick_ani.css
 
 ## How to Use
 효과명 클래스: fade-slide-down
